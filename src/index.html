@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бронирование переговорных</title>
+  <script defer src="../build/build.js"></script>
+</head>
+
+<body>
+  <p id="my-form-status" class="display-none"></p>
+
+  <section class="booking">
+
+    <div class="container">
+
+      <form id="form-booking" action="#" method="POST" autocomplete="on" class="form-booking">
+
+        <h3 class="form-booking__heading">Бронирование переговорных</h3>
+
+        <label class="form-booking__label">
+          <select name="Выберите башню" class="js-tower form-booking__item">
+            <option value="" disabled>Выберите башню</option>
+            <option value="А">А</option>
+            <option value="Б">Б</option>
+          </select>
+
+        </label>
+        <label class="form-booking__label">
+          <select name="Выберите этаж" class="form-booking__item js-floor" required>
+            <option value="" disabled>Выберите этаж</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+          </select>
+        </label>
+
+        <label class="form-booking__label">
+          <select name="Выберите переговорную" class="form-booking__item js-room" required>
+            <option value="" disabled>Выберите переговорную</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </label>
+
+        <label class="form-booking__label">
+          <select name="Выберите время" class="form-booking__item js-time" required>
+            <option value="" disabled>Выберите время</option>
+            <option value="9.00-10.00">9.00-10.00</option>
+            <option value="10.00-11.00">10.00-11.00</option>
+            <option value="11.00-12.00">11.00-12.00</option>
+            <option value="12.00-13.00">12.00-13.00</option>
+            <option value="13.00-14.00">13.00-14.00</option>
+            <option value="14.00-15.00">14.00-15.00</option>
+            <option value="15.00-16.00">15.00-16.00</option>
+            <option value="17.00-18.00">17.00-18.00</option>
+          </select>
+        </label>
+
+        <label class="form-booking__label">
+          <input type="date" name="date" required class="form-booking__item form-booking__item_date js-date">
+        </label>
+
+        <label class="form-booking__label">
+          <textarea name="message" class="form-booking__comments form-booking__item js-comments"
+            placeholder="Комментарии"></textarea>
+        </label>
+
+        <button type="submit" class="form-booking__button  js-btn-send">Отправить</button>
+        <button class="form-booking__button js-btn-clean">Очистить</button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>

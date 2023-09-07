@@ -1,0 +1,130 @@
+button {
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: 300ms;
+  transition-property: all;
+  transition-duration: 300ms;
+}
+
+input {
+  border: none;
+  margin: 0;
+  border-radius: 0;
+}
+
+.display-none {
+  display: none;
+}
+
+#my-form-status {
+  color: #0995fb;
+  position: fixed;
+  margin: auto;
+  top: 150px;
+  left: 0;
+  right: 0;
+  font-size: 24px;
+  background-color: rgb(6 6 6 / 80%);
+  padding: 30px;
+  border-radius: 12px;
+  z-index: 99;
+  width: 50%;
+  text-align: center;
+}
+
+.container {
+  padding: 30px;
+}
+
+.form-booking {
+
+  background: linear-gradient(to right, #002d62, #0995fb);
+  display: flex;
+  max-width: 400px;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.form-booking__heading {
+  font-size: 20px;
+}
+
+.form-booking__label {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.form-booking__select, .form-booking__comments, .form-booking__button:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form-booking__comments, .form-booking__button {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px solid #0995fb;
+}
+
+.form-booking__item {
+  background-color: #ffffff;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  border: none;
+  padding: 10px;
+}
+
+.form-booking__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form-booking__item_date {
+  width: 94%;
+}
+
+.form-booking__comments {
+  width: 90%;
+  min-height: 70px;
+  padding-top: 23px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border: none;
+  outline: 0;
+  transition: background-color .3s;
+}
+
+.form-booking__button {
+  color: #0995fb;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: color .3s, border-color .3s, background-color .3s;
+}
+
+.form-booking__item:hover {
+  color: #0995fb;
+}
+
+.form-booking__item:focus {
+  outline: 2px solid #0995fb;
+  color: black;
+}
+
+.form-booking__button:hover, .form-booking__button:focus {
+  background-color: #0995fb;
+  border-color: #fff;
+  color: #fff;
+}
